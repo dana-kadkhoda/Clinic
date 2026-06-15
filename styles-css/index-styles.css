@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+    .main .about-master-div {
+        display: block !important;
+    }
+
+    .main .about-master-div #about-section {
+        width: 100%;
+        margin: 5rem auto 0rem;
+        display: block;
+    }
+    
+    .main .about-master-div .section-image-doctor {
+        margin: 50px;
+        width: 60% !important;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .main .container-article {
+        display: block !important;
+    }
+
+    .main .container-article article {
+        width: 70% !important;
+        margin: 40px auto;
+    }
+}
+
+
+@media (max-width: 850px) {
+    html {
+      font-size: 10px;
+    }
+
+    .main {
+        padding: 0;
+        text-align: center;
+    }
+
+    .main .about-master-div {
+        display: block;
+    }
+
+    .main .about-master-div section:nth-child(1) {
+        text-align: center !important;
+        width: 100%;
+        
+    }
+
+    .main .about-master-div section:nth-child(1) .about-clinic {
+        width: 100%;
+    }
+    
+    .main .about-master-div .section-image-doctor .overlay , text {
+        display: none;
+    } 
+
+    .main .about-master-div .about-clinic {
+        width: 100%;
+    }
+
+    .main .about-master-div .section-image-doctor .doctor-image {
+        width: 100%;
+        display: block;
+    }
+
+    .main .container-article {
+        display: block;
+    }
+
+    .main .container-article article {
+        width: 90% !important;
+        margin-bottom: 3rem;
+    }
+
+    .main .container-article article h4 {
+        font-weight: 700 !important;
+        font-size: 2rem !important;
+    }
+
+    .main .container-article article p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 535px) {
+    html {
+      font-size: 7px;
+    }
+
+    .title h2 {
+        font-size: 2.2rem;
+        padding: 1.8rem;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    .main .about-master-div {
+        display: block;
+    }
+
+    .main .about-master-div .about-section {
+        width: 100%;
+        margin: 5rem auto 0rem;
+    }
+
+    .main .about-master-div .section-image-doctor {
+        width: 50%;
+        margin: 5rem auto 0rem;
+    }
+    
+    .main .about-master-div .section-image-doctor .overlay , text {
+        display: none;
+    } 
+
+    .main .about-master-div .about-clinic {
+        width: 100%;
+    }
+
+    .main .about-master-div .section-image-doctor .doctor-image {
+        width: 100%;
+        display: block;
+    }
+
+    .main .container-article {
+        display: block;
+    }
+
+    .main .container-article article {
+        width: 90%;
+        margin-bottom: 3rem;
+        padding: 2rem !important;
+    }
+
+}
+
+
+/* start body styles */
+body {
+    background-image: linear-gradient(135deg, rgb(102, 165, 186), rgb(74, 74, 255));
+}
+
+/* start header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 0.2rem 1.2rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(6, 59, 143, 0.623);
+    z-index: 1;
+} 
+
+.header .logo {
+    width: 6.1rem;
+    border-radius: 54%;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#this-page {
+    color: rgb(88, 255, 188);
+}
+
+.header .navbar .ul .li-navbar:hover {
+    color: rgb(88, 255, 188);
+}
+
+.header .navbar .ul  {
+    display: flex;
+    gap: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+.header .telephone-number {
+    color: white;
+    border: 2px solid white;
+    padding: 10px 12px;
+}
+
+.title {
+    color: white;
+    background-image: linear-gradient(135deg, rgb(145, 145, 255), rgb(61, 61, 194));
+    text-align: center;
+    padding: 8px 5px;
+}
+
+/* start main styles */
+
+.main {
+    padding: 0.7rem 3.1rem;
+    margin-top: 5rem;
+}
+
+.main .about-master-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .about-master-div .about-section {
+    width: 65%;
+    line-height: 2.6rem;
+}
+
+.main .about-master-div .about-clinic {
+    width: 70%;
+    text-align: justify;
+}
+
+.main .about-master-div .section-image-doctor {
+    text-align: right;
+    width: 28%;
+    position: relative;
+    overflow: hidden;
+    outline: 3px dashed rgba(17, 220, 156, 0.845);
+    outline-offset: 0.5rem;
+    border-radius: 0.8rem;
+    margin-left: 2%;
+}
+
+.main .about-master-div .section-image-doctor .overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008bba95; 
+	overflow: hidden; 
+	width: 100%;
+	height: 0;
+	transition: all 1s;
+    border-radius: 10px;
+}
+
+.main .about-master-div .section-image-doctor:hover .overlay{
+	bottom: 0;
+	height: 100%;
+
+}
+
+.main .about-master-div .section-image-doctor .text {
+	color: white;
+	font-size: 0.9rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #1C1C1C;
+	text-align: center;
+	padding: 0.8rem;
+	border-radius: 10px;
+}
+
+.main .about-master-div .about-section .button-get-turn {
+    background-color: beige;
+    padding: 0.7rem 1.2rem;
+    margin-top: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(34, 34, 255);
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid rgb(47, 255, 238);
+}
+
+.main .about-master-div .about-section .button-get-turn:active {
+    scale: 0.95;
+}
+
+.main .about-master-div .about-section .button-get-turn:hover {
+    box-shadow: 1px 1px 14px blue;
+    opacity: 0.7;
+}
+
+
+
+.main .about-master-div .section-image-doctor .doctor-image {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.main .container-article {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.main .container-article article {
+    background-color: rgba(126, 164, 234, 0.845);
+    border: 1.3px solid rgba(55, 75, 112, 0.845);
+    width: 100%;
+    padding: 1rem 1.4rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.main .container-article article:hover {
+    background-color: rgba(17, 35, 68, 0.845);
+    color: whitesmoke;
+    border-color: rgba(126, 164, 234, 0.845);
+    transform: translateY(-15px);
+}
+
+.main .container-article article span {
+    display: block;
+    font-size: 3.5rem;
+    margin: 1rem 0 3rem;
+}
+
+.main .container-article article p {
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.main .container-article article h4 {
+    font-size: 1.5rem;
+    margin: 1.4rem 0;
+}
+
+
+
+/* end main styles */
+
+/* start footer styles */
+
+.footer {
+    background-color: rgba(57, 115, 222, 0.845);
+    margin-top: 5rem;
+    padding: 1.9rem 1.3rem;
+}
+
+.footer .footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-div .section-about-us:nth-child(1) {
+    width: 50%;
+}
+
+.footer .footer-div .section-about-us:nth-child(2) {
+    width: 20%;
+}
+
+.footer .footer-div .section-about-us:nth-child(3) {
+    width: 30%;
+}
+
+.footer .footer-div .section-about-us .paragraph-about-us {
+    line-height: 2.5rem;
+}
+
+.footer .footer-div .section-about-us .paragraph-about-us span {
+    font-weight: bold;
+}
+
+.footer .footer-div .ul-footer {
+    align-items: center;
+}
+
+.footer .footer-div .ul-footer .li-footer {
+    line-height: 2.2rem;
+    font-weight: bold;
+}
+
+.footer .footer-div .ul-footer .li-footer:hover {
+    color: rgb(88, 255, 188);
+}
+
+.footer .footer-div .profile-section {
+    text-align: left;
+}
+
+.footer .footer-div .profile-section .social-links .profile-li:not(.profile-li:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-div .profile-section .social-links .profile-link {
+    font-size: 1rem;
+}
+
+.footer .footer-div .profile-section .social-links .profile-icon {
+    transition: all 0.3s;
+    font-size: 1.3rem;
+    margin-right: 1.3rem;
+}
+
+.footer .footer-div .profile-section .social-links .profile-icon:hover {
+    color: rgb(201, 201, 0);
+}
+
+/* end footer styles */

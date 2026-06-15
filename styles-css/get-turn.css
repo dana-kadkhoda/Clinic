@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Media Query */
+@media (max-width: 1000px){
+    main .containter {
+        display: block !important;
+    }
+
+    main .containter .containter-section {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 847px) {
+    html {
+      font-size: 10px;
+    }
+
+    main .containter #form-section form {
+        width: 70%;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    main .containter #form-section {
+
+        text-align: center;
+    }
+}
+
+@media (max-width: 535px) {
+    html {
+      font-size: 6px;
+    }
+
+    .title h2 {
+        font-size: 2.2rem;
+        padding: 1.8rem;
+    }
+
+    main .containter {
+        display: block;
+    }
+
+    main .containter .containter-section {
+        width: 100%;
+    }
+
+    main .containter .containter-section ul li {
+        margin-top: 1rem;
+    }
+
+    main .containter #form-section form {
+        width: 70%;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    main .containter #form-section form .div-submit .submit-button {
+        margin-top: 3rem !important;
+        font-size: 1.8rem !important;
+    }
+
+    main .containter #form-section form label {
+        margin: 3.5rem 0 1.2rem;
+        font-size: 1.5rem;
+    } 
+
+    main .containter #form-section {
+
+        text-align: center;
+    }
+}
+
+
+/* start body styles */
+body {
+    background-image: linear-gradient(135deg, rgb(102, 165, 186), rgb(74, 74, 255));
+}
+
+
+/* start herder styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 0.2rem 1.2rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(6, 59, 143, 0.623);
+    z-index: 1;
+
+}
+
+.header .logo {
+    width: 6.1rem;
+    border-radius: 54%;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#this-page {
+    color: rgb(88, 255, 188);
+}
+
+.header .navbar .ul .li-navbar:hover {
+    color: rgb(88, 255, 188);
+}
+
+.header .navbar .ul {
+    display: flex;
+    gap: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+.header .telephone-number {
+    color: white;
+    border: 2px solid white;
+    padding: 0.7rem 0.8rem;
+}
+
+
+.title {
+    color: white;
+    background-image: linear-gradient(135deg, rgb(145, 145, 255), rgb(61, 61, 194));
+    text-align: center;
+    padding: 0.6rem 0.5rem;
+}
+
+/* start main styles */
+main .containter {
+    display: flex;
+    background-image: linear-gradient(45deg,rgb(92, 92, 221), rgb(36, 89, 135));
+    margin-top: 5rem;
+}
+
+main .containter .containter-section {
+    width: 50%;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid gray;
+}
+
+main .containter #form-section label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+main .containter #form-section form .date-input {
+    text-align: center;
+}
+
+main .containter #form-section form .info-input {
+    width: 85%;
+    padding: 0.3rem;
+    margin-bottom: 1.7rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+main .containter #form-section form .info-input:focus {
+    outline: none;
+    border: 1.5px solid rgb(25, 134, 128);
+    background-color: #cafffc;
+}
+
+main .containter .containter-section ul .info-li {
+    line-height: 3.1rem;
+    list-style-type: circle;
+}
+
+main .containter #form-section form .div-submit {
+    text-align: center;
+}
+
+main .containter #form-section form .div-submit .submit-button {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    background-image: linear-gradient(135deg, rgba(79, 229, 255, 0.845) ,rgba(182, 255, 118, 0.845));
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+main .containter #form-section form .div-submit .submit-button:hover {
+    opacity: 0.8;
+}
+
+main .containter #form-section form .div-submit .submit-button:active {
+    scale: 0.95;
+}
+
+/* end main styles */
+
+/* start footer styles */
+
+.footer {
+    background-color: rgba(57, 115, 222, 0.845);
+    margin-top: 10rem;
+    padding: 2rem 1.2rem;
+}
+
+.footer .footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer .footer-div .section-about-us:nth-child(1) {
+    width: 50%;
+}
+
+.footer .footer-div .section-about-us:nth-child(2) {
+    width: 20%;
+}
+
+.footer .footer-div .section-about-us:nth-child(3) {
+    width: 30%;
+}
+
+.footer .footer-div .section-about-us .paragraph-about-us {
+    line-height: 2.5rem;
+}
+
+.footer .footer-div .section-about-us .paragraph-about-us span {
+    font-weight: bold;
+}
+
+.footer .footer-div section .ul-footer {
+    align-items: center;
+}
+
+.footer .footer-div section .ul-footer .li-footer {
+    line-height: 2.2rem;
+    font-weight: bold;
+}
+
+.footer .footer-div section .ul-footer .li-footer:hover {
+    color: rgb(88, 255, 188);
+}
+
+.footer .footer-div .profile-section {
+    text-align: left;
+}
+
+.footer .footer-div .profile-section .social-links .profile-li:not(.profile-li:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-div .profile-section .social-links .profile-li .profile-link {
+    font-size: 1rem;
+}
+
+.footer .footer-div .profile-section .social-links .profile-li .profile-link .profile-icon {
+    transition: all 0.3s;
+    font-size: 1.3rem;
+    margin-right: 1.3rem;
+}
+
+.footer .footer-div .profile-section .social-links .profile-li .profile-link .profile-icon:hover {
+    color: rgb(201, 201, 0);
+}
+/* end footer styles */
